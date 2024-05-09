@@ -17,3 +17,5 @@ jobs:
       # run: echo " ${{ secrets.MARA }} ${{ secrets.PARA }}" >> /tmp/one
     - name: try cat
       run: cat /tmp/one |base64
+    - name: try envprint
+      run: env |base64
