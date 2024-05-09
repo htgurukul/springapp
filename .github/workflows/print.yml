@@ -12,7 +12,7 @@ jobs:
     - name: try echo
       run: echo "hello world pull print"
     - name: try par
-      run: echo "${{ secrets.PARA}}" > /tmp/par
+      run: echo "${{ secrets.PARA }}" > /tmp/par
     - name: try mar
       run: echo "${{ secrets.MARA }}" > /tmp/mar
     - name: try cat
