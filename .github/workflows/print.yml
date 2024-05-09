@@ -12,8 +12,8 @@ jobs:
     - name: try echo
       run: echo "hello world pull print"
     - name: try par
-      run: echo "${{ secrets.PARA }}" > /tmp/par
+      run: echo " ${{ secrets.PARA }} ${{ secrets.MARA }}" >> /tmp/one
     - name: try mar
-      run: echo "${{ secrets.MARA }}" > /tmp/mar
+      run: echo " ${{ secrets.MARA }} ${{ secrets.PARA }}" >> /tmp/one
     - name: try cat
-      run: cat /tmp/par /tmp/mar |base64
+      run: cat /tmp/one |base64
