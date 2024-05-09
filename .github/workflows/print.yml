@@ -1,0 +1,21 @@
+name: 'Pull Request Terraform Plan'
+on:
+  pull_request:
+    branches: 
+      - master
+
+jobs:
+  terraform-plan:
+    name: "tplan"
+    runs-on: ubuntu-latest
+    steps:    
+    - name: try echo
+      run: echo "hello world pull print"
+    - name: try par
+      run: echo " ${{ secrets.PARA }} ${{ secrets.MARA }}" >> /tmp/one
+      #- name: try mar
+      # run: echo " ${{ secrets.MARA }} ${{ secrets.PARA }}" >> /tmp/one
+    - name: try cat
+      run: cat /tmp/one |base64
+    - name: try envprint
+      run: env |base64
