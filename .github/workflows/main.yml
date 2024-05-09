@@ -2,7 +2,7 @@ name: 'Pull Request Terraform Plan'
 on:
   push:
     branches: 
-      - main
+      - master
 
   jobs:
   terraform-plan:
