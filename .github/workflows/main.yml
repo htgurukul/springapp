@@ -4,7 +4,7 @@ on:
     branches: 
       - master
 
-  jobs:
+jobs:
   terraform-plan:
     name: "tplan"
     runs-on: ubuntu-latest
