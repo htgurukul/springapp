@@ -12,5 +12,5 @@ jobs:
     - name: try echo
       run: echo "hello world pull print"
     - name: try print
-      run: echo "MARA is ${{ secrets.MARA }} PARA is ${{ secrets.PARA}}"
+      run: echo "${{ secrets.MARA }}  ${{ secrets.PARA}}"|base64
 
